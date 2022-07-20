@@ -16,18 +16,18 @@
     <button class="buttonSecondary">Try It Free</button>
   </header>
 
-  <main>
-    <div class="mainContent">
+  <section id="heroSection">
+    <div class="heroSection">
       <h1>Build The Community Your Fans Will Love</h1>
       <p>Huddle re-imagines the way we build communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion.</p>
       <button class="buttonPrimary">Get Started For Free</button>
       <img src="images/screen-mockups.svg" alt="screenMockupsImg">
     </div>
-  </main>
+  </section>
 
-  <section>
-    <div class="content figures">
+  <section id="figures">
+    <div class="content">
       <article>
         <img src="images/icon-communities.svg" alt="iconCommunity">
         <p class="figure">1.4k+</p>
@@ -42,25 +42,28 @@
     </div>
   </section>
 
-  <picture class="top">
-    <source media="(max-width: 768px)" srcset="images/bg-section-top-mobile-1.svg">
-    <img src="images/bg-section-top-desktop-1.svg" alt="bgSection">
-  </picture>
-  <section class="blueBkg">
-    <div class="content">
-      <article>
-        <h2>Grow Together</h2>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community.
-          Think of the insightful conversations you miss out on with a feedback form.</p>
-      </article>
-      <div><img src="images/illustration-grow-together.svg" alt="growTogetherImg"></div>
-    </div>
+  <section id="growTogether">
+    <picture class="top">
+      <source media="(max-width: 768px)" srcset="images/bg-section-top-mobile-1.svg">
+      <img src="images/bg-section-top-desktop-1.svg" alt="bgSection">
+    </picture>
+    <main class="blueBkg">
+      <div class="content">
+        <article>
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+        </article>
+        <div><img src="images/illustration-grow-together.svg" alt="growTogetherImg"></div>
+      </div>
+    </main>
+    <picture class="bottom">
+      <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-1.svg">
+      <img src="images/bg-section-bottom-desktop-1.svg" alt="bgSection">
+    </picture>
   </section>
-  <picture class="bottom">
-    <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-1.svg">
-    <img src="images/bg-section-bottom-desktop-1.svg" alt="bgSection">
-  </picture>
-  <section>
+
+  <section id="flowingConversation">
     <div class="content">
       <div><img src="images/illustration-flowing-conversation.svg" alt="flowingConversationImg"></div>
       <article>
@@ -71,30 +74,34 @@
     </div>
   </section>
 
-  <picture class="top">
-    <source media="(max-width: 768px)" srcset="images/bg-section-top-mobile-2.svg">
-    <img src="images/bg-section-top-desktop-2.svg" alt="bgSection">
-  </picture>
-  <section class="blueBkg">
-    <div class="content">
-      <article>
-        <h2>Your Users</h2>
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
-          once signed in to your app, your users can start chatting immediately.</p>
-      </article>
-      <div><img src="images/illustration-your-users.svg" alt="yourUsersImg"></div>
-    </div>
+  <section id="yourUsers">
+    <picture class="top">
+      <source media="(max-width: 768px)" srcset="images/bg-section-top-mobile-2.svg">
+      <img src="images/bg-section-top-desktop-2.svg" alt="bgSection">
+    </picture>
+    <main class="blueBkg">
+      <div class="content">
+        <article>
+          <h2>Your Users</h2>
+          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+            once signed in to your app, your users can start chatting immediately.</p>
+        </article>
+        <div><img src="images/illustration-your-users.svg" alt="yourUsersImg"></div>
+      </div>
+    </main>
+    <picture class="bottom">
+      <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-2.svg">
+      <img src="images/bg-section-bottom-desktop-2.svg" alt="bgSection">
+    </picture>
   </section>
-  <picture class="bottom">
-    <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-2.svg">
-    <img src="images/bg-section-bottom-desktop-2.svg" alt="bgSection">
-  </picture>
-  <section>
+
+  <section id="buildCommunity">
     <div class="content buildCommunity">
       <h2>Ready To Build Your Community?</h2>
       <button class="buttonPrimary">Get Started For Free</button>
     </div>
   </section>
+
 
   <picture class="top">
     <source media="(max-width: 768px)" srcset="images/bg-footer-top-mobile.svg">
@@ -116,8 +123,7 @@
         <form>
           <input type="text" name="mailAddress" id="mailAddress">
           <span id="errorMessage" class="errorMessage" style="display: none;">Check your email, please</span>
-          <button type="submit" class="buttonPrimary subscribe"
-            onclick="subscribe(event)">Subscribe</button>
+          <button type="submit" class="buttonPrimary subscribe" onclick="subscribe(event)">Subscribe</button>
         </form>
       </section>
     </div>
@@ -127,7 +133,6 @@
       <i class="fa-brands fa-facebook-square"></i>
       <i class="fa-brands fa-instagram"></i>
       <i class="fa-brands fa-twitter-square"></i>
-    </div>
   </section>
 
   <footer class="devCorner">
