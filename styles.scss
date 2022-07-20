@@ -274,9 +274,10 @@ header {
 
     input {
       width: 65%;
+      min-width: 275px;
       max-width: 380px;
       border: none;
-      padding: 1em;
+      padding: 1.3em;
       border-radius: 0.5em;
       color: var(--veryDarkCyan);
     }
