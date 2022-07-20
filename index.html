@@ -86,7 +86,7 @@
     </div>
   </section>
   <picture class="bottom">
-    <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-2">
+    <source media="(max-width: 768px)" srcset="images/bg-section-bottom-mobile-2.svg">
     <img src="images/bg-section-bottom-desktop-2.svg" alt="bgSection">
   </picture>
   <section>
@@ -113,9 +113,9 @@
         <h2>NEWSLETTER</h2>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
           send you spam or pass on your email address</p>
-        <form action="/">
+        <form>
           <input type="text" name="mailAddress" id="mailAddress">
-          <span class="errorMessage" style="display: none;">Check your email, please</span>
+          <span id="errorMessage" class="errorMessage" style="display: none;">Check your email, please</span>
           <button type="submit" class="buttonPrimary subscribe"
             onclick="subscribe(event)">Subscribe</button>
         </form>
@@ -136,6 +136,8 @@
       Coded by <a href="https://www.frontendmentor.io/profile/EstelleRoges">Teru-san</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
