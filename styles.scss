@@ -30,6 +30,7 @@ h6 {
 
 h1 {
   font-size: 40px;
+  text-align: center;
 }
 
 h2 {
@@ -85,9 +86,7 @@ button {
 
 .buttonPrimary {
   margin: 2em;
-
   background-color: var(--pink);
-
   padding: 1.5em 5em;
   border-radius: 2em;
   color: white;
@@ -122,12 +121,6 @@ button {
   background-color: var(--veryPaleBlue);
 }
 
-.heroSection {
-  margin: 5em;
-  width: 75%;
-  max-width: 1100px;
-}
-
 section {
   main {
     margin: 0;
@@ -158,21 +151,26 @@ section {
 .content {
   margin: auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #heroSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  .heroSection {
+    margin: 5em auto;
+    width: 75%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   p {
     margin: auto;
     width: 60%;
+    text-align: center;
     font-weight: 600;
   }
 
@@ -222,13 +220,14 @@ header {
   flex-direction: column;
 }
 
-.websiteFooter {
+#footer footer {
   background-color: var(--veryDarkCyan);
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
   .content {
+    align-items: flex-start;
     margin: 4%;
     margin-bottom: 0;
   }
@@ -247,17 +246,16 @@ header {
     }
 
     img {
+      width: 40px;
       padding-right: 1em;
     }
 
     .footerLogo {
-      padding: 0;
+      width: auto;
       filter: grayscale(100%) brightness(100%) invert(100%);
     }
 
-
     &:first-of-type {
-      padding-top: 0;
       width: 60%;
     }
 
@@ -274,7 +272,7 @@ header {
 
     input {
       width: 65%;
-      min-width: 275px;
+      min-width: 250px;
       max-width: 380px;
       border: none;
       padding: 1.3em;
@@ -295,10 +293,11 @@ header {
 }
 
 .socials {
-  padding: 0.5em 2em;
+  padding: 0em 2em;
   background-color: var(--veryDarkCyan);
 
   .content {
+    padding: 0 1.5em;
     justify-content: flex-start;
   }
 
@@ -334,4 +333,185 @@ header {
     text-decoration: none;
     color: var(--lightPink);
   }
+}
+
+@media screen and (max-width: 1400px) {
+  #footer footer {
+    section {
+      width: 50%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #figures {
+    .content {
+      justify-content: space-around;
+    }
+  }
+
+  #footer footer {
+    section {
+      &:first-of-type,
+      &:last-of-type {
+        width: 50%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #footer footer {
+    form {
+      flex-direction: column;
+      align-items: flex-end;
+
+      input {
+        width: 100%;
+      }
+
+      button {
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #heroSection .heroSection {
+    margin: 3em auto;
+    width: 95%;
+
+    p {
+      width: 100%;
+    }
+  }
+  section {
+    main {
+      margin: 0;
+      padding: 3em 1.5em;
+    }
+
+    h2,
+    p {
+      margin: 0.5em 0;
+      text-align: center;
+    }
+
+    article {
+      padding: 2em;
+      width: 100%;
+    }
+
+    div {
+      padding: 1em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 85%;
+      }
+    }
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #growTogether main .content,
+  #yourUsers main .content,
+  #footer footer .content {
+    flex-direction: column-reverse;
+  }
+
+  #footer footer .content {
+    h2,
+    p {
+      text-align: start;
+    }
+    section {
+      width: 100%;
+    }
+
+    form {
+      flex-direction: column;
+      align-items: flex-end;
+
+      input {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      button {
+        margin: 1em 0;
+      }
+    }
+  }
+
+  .socials .content {
+    flex-direction: row;
+    padding-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 0.5em;
+    font-size: 24px;
+  }
+
+  p,
+  button {
+    font-size: 15px;
+  }
+
+  .buttonPrimary {
+    padding: 1em 3.5em;
+  }
+
+  .buttonSecondary {
+    border: 1px solid var(--pink);
+    padding: 0.5em 1.5em;
+  }
+
+  .subscribe {
+    padding: 1em 1.5em;
+    box-shadow: none;
+    border-radius: 0.5em;
+  }
+
+  header {
+    align-items: center;
+    img {
+      width: 40%;
+      height: fit-content;
+    }
+  }
+
+  #figures .figure {
+    font-size: 4em;
+  }
+
+  #footer footer section {
+    padding: 2em 0;
+
+  .footerLogo {
+    width: 70%;
+  }
+  }
+  
 }
