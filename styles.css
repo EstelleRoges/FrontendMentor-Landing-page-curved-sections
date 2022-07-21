@@ -108,6 +108,7 @@ button:hover {
 }
 
 .subscribe {
+  margin: 0 0 0 1em;
   padding: 1em 1.5em;
   box-shadow: none;
   border-radius: 0.5em;
