@@ -53,7 +53,7 @@ picture * {
 
 .top {
   position: relative;
-  bottom: -5px;
+  bottom: -10px;
 }
 .top img {
   margin-top: 3em;
@@ -61,7 +61,7 @@ picture * {
 
 .bottom {
   position: relative;
-  top: -5px;
+  top: -10px;
 }
 .bottom img {
   margin-bottom: 5em;
